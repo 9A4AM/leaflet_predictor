@@ -152,7 +152,7 @@ function setLatLonByClick(state) {
             clickListener = map.on('click', function(event) {
                 appendDebug("Got a click from user, setting values into form");
                 $("#error_window").fadeOut();
-                setFormLatLon(event.latlng);
+                setFormLatLon(event.latlng.wrap());
             });
         }
         // Tell the user what to do next

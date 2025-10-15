@@ -24,7 +24,7 @@ function setupEventHandlers() {
 
     // Add the onmove event handler to the map canvas
     map.on('mousemove', function(event) {
-        showMousePos(event.latlng);
+        showMousePos(event.latlng.wrap());
     });
 }
 
