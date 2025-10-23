@@ -20,7 +20,7 @@ function initMap(centre_lat, centre_lon, zoom_level) {
     map = L.map('map_canvas').setView([centre_lat, centre_lon], zoom_level);
 
     // Add OSM Map Layer
-    var osm_map = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    var osm_map = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
